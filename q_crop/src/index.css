@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #123D2A;
+    --color-secondary-green: #26734D;
+    --color-lime: #A3D977;
+    --color-page-bg: #F5F8F4;
+    --color-card-bg: #FFFFFF;
+    --color-text-main: #172B22;
+    --color-text-muted: #718078;
+    --color-border: #E0E8E1;
+  }
+
+  body {
+    background-color: #F5F8F4;
+    color: #172B22;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F8F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4D4C8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #26734D;
+}
+
+/* Focus Outline Style for Accessibility */
+:focus-visible {
+  outline: 2px solid #26734D;
+  outline-offset: 2px;
+}
